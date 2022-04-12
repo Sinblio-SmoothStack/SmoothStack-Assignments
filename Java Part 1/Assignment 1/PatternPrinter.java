@@ -5,12 +5,14 @@
 * method utilizing the function inorder to print out 4 different patterns.
 */
 
-public class Assignment1 {
+public class PatternPrinter {
 
     // private variable needed so print pattern can print  the sequence while main can increase its length between runs
-    private static String dotSequence  = ".........";
+    private static StringBuffer dotSequence;
 
     public static void main(String[] args) {
+        //constructs dotSequence
+        dotSequence  = new StringBuffer(".........");
 
         // loop for the number of patterns to be printed, starts at one for ease of labeling
         for (int i = 1; i < 5; i++) {
@@ -20,22 +22,14 @@ public class Assignment1 {
 
             // case structure used to call the printPattern function with appropriate parameters for each loop through
             switch (i) {
-                case 1:
-                    printPattern(4, 1, 1, 1);
-                    break;
-                case 2:
-                    printPattern(4, 4, -1, 0);
-                    break;
-                case 3:
-                    printPattern(4, 1, 2, 1, 5, -1);
-                    break;
-                case 4:
-                    printPattern(4, 7, -2, 0, 2, 1);
-                    break;
+                case 1 -> printPattern(4, 1, 1, 1);
+                case 2 -> printPattern(4, 4, -1, 0);
+                case 3 -> printPattern(4, 1, 2, 1, 5, -1);
+                case 4 -> printPattern(4, 7, -2, 0, 2, 1);
             }
 
             // increments dot sequence following each run through
-            dotSequence += ".";
+            dotSequence.append('.');
         }
     }
 
@@ -58,17 +52,8 @@ public class Assignment1 {
 
 
         for(int j = 0; j < lines; j ++) {
-
-            // an empty string is created to contain the output
-            String out = "";
-
-            // add spaces to out equal to the current value of spaces
-            for (int k = 0; k < spaces; k++)
-                out += " ";
-
-            // add stars to out equal to the current value of stars
-            for (int k = 0; k < stars; k++)
-                out += "*";
+            // add spaces and stars equal to their current values
+            String out = " ".repeat(spaces) + "*".repeat(stars);
 
             System.out.println(out);
 

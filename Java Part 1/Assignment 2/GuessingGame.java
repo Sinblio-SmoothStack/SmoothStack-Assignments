@@ -9,7 +9,7 @@
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class Assignment2 {
+public class GuessingGame {
 
     // the minimum and maximum values possible for the game to generate
     private static final int MIN_VALUE = 1;
@@ -26,8 +26,7 @@ public class Assignment2 {
         System.out.println(randomNumber);
 
         // greeting message for the user outlining the rules
-        System.out.printf("Welcome, I have generated a random number between %d and %d. you have %d attempts to guess" +
-                " a number within %d of that random number. Good Luck!!\n\n", MIN_VALUE, MAX_VALUE, NUMBER_OF_GUESSES,
+        System.out.printf("Welcome, I have generated a random number between %d and %d. you have %d attempts to guess a number within %d of that random number. Good Luck!!\n\n", MIN_VALUE, MAX_VALUE, NUMBER_OF_GUESSES,
                 ACCEPTABLE_ERROR);
 
         Scanner in = new Scanner(System.in);

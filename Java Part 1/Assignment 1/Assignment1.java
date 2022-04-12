@@ -8,7 +8,7 @@
 public class Assignment1 {
 
     // private variable needed so print pattern can print  the sequence while main can increase its length between runs
-    private static String dotSequence  = ".........";;
+    private static String dotSequence  = ".........";
 
     public static void main(String[] args) {
 

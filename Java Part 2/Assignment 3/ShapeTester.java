@@ -1,3 +1,9 @@
+/*
+ * Ben Schroeder
+ *
+ * Tester for shape, rectangle, circle, and triangle objects
+ */
+
 public class ShapeTester {
     public static void main(String[] args) {
         Circle circle1 = new Circle();

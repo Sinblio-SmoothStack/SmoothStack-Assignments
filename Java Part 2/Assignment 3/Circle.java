@@ -61,6 +61,6 @@ public class Circle implements Shape{
      */
     @Override
     public void display() {
-        System.out.printf("Circle with a radius of %s", radius);
+        System.out.printf("Circle with a radius of %s\n", radius);
     }
 }

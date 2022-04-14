@@ -36,7 +36,6 @@ public class ArraySearcher {
         maxLocation.clear();
         if (toSearch != null && toSearch.length != 0 && toSearch[0].length != 0) {
             int maxValue = toSearch[0][0];
-            maxLocation.add(new Point(0, 0));
 
             for (int i = 0; i < toSearch.length; i++) {
                 for (int j = 0; j < toSearch[0].length; j++) {

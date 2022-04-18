@@ -1,0 +1,14 @@
+Which class would you use to store your birthday in years, months, days, seconds, and nanoseconds?
+
+A LocalDateTime has the ability to sore all of that information, as it is a combination of a LocalDate and LocalTime
+
+
+
+What is the difference between a ZoneId and a ZoneOffset?
+
+ZoneId - is a timezone with a fixed offset
+
+ZoneOffset - extends ZoneId and allows for setting of an offset to the given timezone
+
+
+

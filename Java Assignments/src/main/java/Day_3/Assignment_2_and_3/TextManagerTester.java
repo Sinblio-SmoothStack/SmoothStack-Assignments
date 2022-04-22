@@ -1,4 +1,4 @@
-/*
+package Day_3.Assignment_2_and_3;/*
  * Ben Schroeder
  *
  * A tester class made to test TextManagers various functions
@@ -6,7 +6,7 @@
 
 public class TextManagerTester {
     public static void main(String[] args) {
-        TextManager textManager = new TextManager("Test Files\\Part3Assignment2.txt");
+        TextManager textManager = new TextManager("Java Assignments\\Test Files\\Part3Assignment2.txt");
         String write1 = """
                 "Hello there,"
                 "Are you reading this?"

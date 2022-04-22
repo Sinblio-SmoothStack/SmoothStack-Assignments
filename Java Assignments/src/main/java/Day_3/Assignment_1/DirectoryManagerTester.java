@@ -1,4 +1,4 @@
-/*
+package Day_3.Assignment_1;/*
  * Ben Schroeder
  *
  * A tester class for the DirectoryManager object and its printInfo function

@@ -1,4 +1,4 @@
-/*
+package Day_3.Assignment_2_and_3;/*
  * Ben Schroeder
  *
  * An object that read, scan, and append a given file

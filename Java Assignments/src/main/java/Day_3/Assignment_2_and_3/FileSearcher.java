@@ -1,4 +1,4 @@
-/*
+package Day_3.Assignment_2_and_3;/*
  * Ben Schroeder
  *
  * Takes command line arguments being a file and char, then prints the occurrences of that char within that file.

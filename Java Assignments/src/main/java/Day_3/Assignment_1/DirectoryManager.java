@@ -1,4 +1,4 @@
-/*
+package Day_3.Assignment_1;/*
  * Ben Schroeder
  *
  * An object that sores a file path and is able to print the contents of a directory and its sub-directories

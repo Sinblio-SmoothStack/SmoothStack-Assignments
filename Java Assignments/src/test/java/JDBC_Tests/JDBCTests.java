@@ -101,5 +101,8 @@ public class JDBCTests {
 
         for (Student student: studentDao.getStudents(studentTableName))
             System.out.println(student);
+
+        studentDao.dropTable();
+        schoolDao.dropTable();
     }
 }

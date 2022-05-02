@@ -5,6 +5,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @FunctionalInterface
-public interface StatementFunction<T> {
+public interface StatementFunction {
     void process(PreparedStatement s) throws SQLException;
 }

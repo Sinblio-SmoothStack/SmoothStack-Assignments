@@ -10,7 +10,7 @@ public class MultipleChoiceQuestion implements Serializable {
     @Id
     private Integer id;
 
-    @OneToOne (cascade = CascadeType.ALL, optional = false)
+    @OneToOne (optional = false)
     @JoinColumn(name = "question_id", referencedColumnName = "id", nullable = false)
     @MapsId
     private Question question;

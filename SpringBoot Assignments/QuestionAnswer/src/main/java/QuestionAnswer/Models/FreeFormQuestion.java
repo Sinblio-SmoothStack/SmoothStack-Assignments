@@ -9,7 +9,7 @@ public class FreeFormQuestion implements Serializable {
     @Id
     private Integer id;
 
-    @OneToOne (cascade = CascadeType.ALL, optional = false)
+    @OneToOne (optional = false)
     @MapsId
     @JoinColumn(name = "question_id", referencedColumnName = "id", nullable = false)
     private Question question;

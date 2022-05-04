@@ -17,11 +17,6 @@ public class AirportController {
         Airport createdAirport = airportRepository.save(airport);
     }
 
-    @RequestMapping(path = "/hello")
-    public String getHello() {
-        return "Hello There";
-    }
-
     @GetMapping(path = "/all")
     public @ResponseBody Iterable<Airport> getAllAirports() {
         return airportRepository.findAll();

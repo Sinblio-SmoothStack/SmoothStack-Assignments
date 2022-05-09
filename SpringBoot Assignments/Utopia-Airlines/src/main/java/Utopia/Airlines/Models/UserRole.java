@@ -1,7 +1,10 @@
 package Utopia.Airlines.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 
+@JsonIgnoreProperties({"hibernateLazyInitializer"})
 @Entity
 @Table(name = "user_role")
 public class UserRole {

@@ -1,0 +1,18 @@
+<mat-list role="list">
+  <mat-list-option *ngFor="let airport of airports">
+    {{airport.iataid}}, {{airport.city}}
+  </mat-list-option>
+</mat-list>
+
+<h1>Add New Airport!</h1>
+<form role="form" (submit)="addAirport()">
+  <div class="form-group">
+    <label for="iata_id">IATA ID:</label> <input type="text"
+                                                   class="form-control" id="iata_id" name="iata_id" [(ngModel)]="newAirport.iata_id"/>
+  </div>
+  <div class="form-group">
+    <label for="city">City:</label> <input type="password"
+                                                   class="form-control" id="city" name= "city" [(ngModel)]="newAirport.city"/>
+  </div>
+  <button type="add_airport" class="btn btn-primary">Add Airport</button>
+</form>
